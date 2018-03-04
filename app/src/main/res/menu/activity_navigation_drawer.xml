@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="?android:attr/listChoiceIndicatorMultiple"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_list"
+            android:icon="?android:attr/actionModeFindDrawable"
+            android:title="To-do List" />
+        <item
+            android:id="@+id/nav_usage"
+            android:icon="@android:drawable/ic_menu_view"
+            android:title="App Usage Dashboard" />
+        <item
+            android:id="@+id/nav_plan"
+            android:icon="?attr/actionModePasteDrawable"
+            android:title="Advanced Habit Plan" />
+        <item
+            android:id="@+id/nav_alert"
+            android:icon="@android:drawable/ic_popup_reminder"
+            android:title="Alert" />
+    </group>
+
+    <item android:title="More">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_privacy"
+                android:icon="@android:drawable/ic_lock_idle_lock"
+                android:title="Privacy &amp; terms" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/architects_daughter"
+        android:text="Morning Jane!"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Wednes, Feb 28, 2018"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Workout" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@android:color/background_light"
+            android:gravity="center"
+            android:text="Mediation" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Reading" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@android:color/background_light"
+            android:gravity="center"
+            android:text="Limit Screen Time" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Cooking" />
+    </LinearLayout>
+
+</LinearLayout>
