@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".HomePage3Activity"
+            android:name=".Navigation"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +24,7 @@
         </activity>
         <activity android:name=".AppUsageActivity"></activity>
         <activity android:name=".HomePage2Activity"></activity>
-        <!--<activity android:name=".HomePage3Activity"></activity>-->
+        <activity android:name=".HomePage3Activity"></activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
