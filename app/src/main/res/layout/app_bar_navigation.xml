@@ -30,6 +30,7 @@
         <include layout="@layout/activity_app_usage"/>
         <include layout="@layout/activity_advanced_health_plan"/>
         <include layout="@layout/activity_create_new_habit"/>
+        <include layout="@layout/profile"/>
 
     </ViewFlipper>
     <!--<include layout="@layout/main_panel_1"/>-->

@@ -22,11 +22,11 @@ public class CreateNewActivity  extends AppCompatActivity implements View.OnClic
         toolbar.setTitle("Habit Reboot");
 
         //设置导航图标要在setSupportActionBar方法之后
-        setSupportActionBar(toolbar);
-        toolbar.setNavigationIcon(R.mipmap.menuicon);
-
-        Button button = findViewById(R.id.button2);
-        button.setOnClickListener(this);
+//        setSupportActionBar(toolbar);
+//        toolbar.setNavigationIcon(R.mipmap.menuicon);
+//
+//        Button button = findViewById(R.id.button2);
+//        button.setOnClickListener(this);
 
     }
 

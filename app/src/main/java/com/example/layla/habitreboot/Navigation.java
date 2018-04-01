@@ -13,10 +13,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.ViewFlipper;
 
 public class Navigation extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,11 @@ public class Navigation extends AppCompatActivity
 
         Toolbar toolbar = findViewById(R.id.toolbar);
 
+//        setSupportActionBar(toolbar);
+//        toolbar.setNavigationIcon(R.mipmap.menuicon);
+//
+//        Button button = findViewById(R.id.button2);
+//        button.setOnClickListener(this);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -36,6 +42,15 @@ public class Navigation extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 
+
+
+    @Override
+    public void onClick(View v) {
+        // TODO Auto-generated method stub
+        Intent i = new Intent(getApplicationContext(),AppUsageActivity.class);
+        startActivity(i);
+        setContentView(R.layout.activity_app_usage);
+    }
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -95,7 +110,7 @@ public class Navigation extends AppCompatActivity
         } else if (id == R.id.nav_setting) {
             vf.setDisplayedChild(4);
         } else if (id == R.id.nav_privacy) {
-            vf.setDisplayedChild(0);
+            vf.setDisplayedChild(5);
         } else if (id == R.id.nav_logout) {
             vf.setDisplayedChild(0);
         }

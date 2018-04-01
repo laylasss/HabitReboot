@@ -46,11 +46,12 @@ public class HomePage3Activity  extends AppCompatActivity implements View.OnClic
         host.addTab(spec);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("Habit Reboot");
+        toolbar.setTitle("Habit Reboot3");
 
         //设置导航图标要在setSupportActionBar方法之后
-        setSupportActionBar(toolbar);
-        toolbar.setNavigationIcon(R.mipmap.menuicon);
+//        setSupportActionBar(toolbar);
+//        toolbar.setNavigationIcon(R.mipmap.menuicon);
+
         // render charts
         setContentView(R.layout.activity_home_page3);
         BarChart bchart = findViewById(R.id.chart1);

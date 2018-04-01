@@ -23,8 +23,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".AppUsageActivity"></activity>
-        <activity android:name=".HomePage2Activity"></activity>
-        <activity android:name=".HomePage3Activity"></activity>
+        <!--<activity android:name=".HomePage2Activity"></activity>-->
+        <!--<activity android:name=".HomePage3Activity"></activity>-->
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

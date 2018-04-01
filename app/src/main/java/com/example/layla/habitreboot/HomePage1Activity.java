@@ -18,14 +18,14 @@ public class HomePage1Activity extends AppCompatActivity implements OnClickListe
         setContentView(R.layout.activity_home_page1);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("Habit Reboot");
-
-        //设置导航图标要在setSupportActionBar方法之后
-        setSupportActionBar(toolbar);
-        toolbar.setNavigationIcon(R.mipmap.menuicon);
-
-        Button button = findViewById(R.id.button3);
-        button.setOnClickListener(this);
+        toolbar.setTitle("Habit Reboot1");
+//
+//        //设置导航图标要在setSupportActionBar方法之后
+//        setSupportActionBar(toolbar);
+//        toolbar.setNavigationIcon(R.mipmap.menuicon);
+//
+//        Button button = findViewById(R.id.button3);
+//        button.setOnClickListener(this);
 
     }
 

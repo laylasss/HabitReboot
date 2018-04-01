@@ -10,7 +10,7 @@
         android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="100dp"
         android:background="@null"
         android:ems="10"
         android:fontFamily="@font/autour_one"
@@ -19,7 +19,7 @@
         android:text="Jane Smith"
         android:textAlignment="center"
         android:textColor="#4f4f4f"
-        android:textSize="14sp"
+        android:textSize="22sp"
         android:textStyle="bold"
         android:typeface="monospace" />
 
@@ -63,7 +63,7 @@
         android:text="BASIC PROFILE"
         android:textAlignment="viewStart"
         android:textColor="#4f4f4f"
-        android:textSize="14sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:typeface="monospace" />
 
@@ -76,7 +76,7 @@
             android:id="@+id/imageView2"
             android:layout_width="20dp"
             android:layout_height="19dp"
-            android:layout_marginLeft="4dp"
+            android:layout_marginLeft="26dp"
             android:layout_marginTop="12dp"
             android:layout_weight="1"
             app:srcCompat="@mipmap/iconavatar" />
@@ -86,6 +86,7 @@
             android:layout_width="270dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
             android:layout_weight="1"
             android:ems="10"
             android:fontFamily="@font/autour_one"
@@ -93,7 +94,7 @@
             android:text="Jane Smith"
             android:textAlignment="textStart"
             android:textColor="#4f4f4f"
-            android:textSize="11sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:typeface="monospace" />
 
@@ -107,7 +108,7 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="20dp"
+            android:layout_width="50dp"
             android:layout_height="19dp"
             android:layout_weight="1"
             app:srcCompat="@mipmap/information" />
@@ -124,7 +125,7 @@
             android:text="Here's a little bit about me. And so it goes on and on and on."
             android:textAlignment="textStart"
             android:textColor="#4f4f4f"
-            android:textSize="11sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:typeface="monospace" />
     </LinearLayout>
@@ -144,7 +145,7 @@
         android:text="PRIVATE INFORMATION"
         android:textAlignment="viewStart"
         android:textColor="#4f4f4f"
-        android:textSize="14sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:typeface="monospace" />
 
@@ -157,6 +158,7 @@
             android:id="@+id/imageView4"
             android:layout_width="63dp"
             android:layout_height="13dp"
+            android:layout_marginLeft="24dp"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
             app:srcCompat="@mipmap/mail" />
@@ -166,13 +168,14 @@
             android:layout_width="301dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
+            android:layout_marginLeft="20dp"
             android:ems="10"
             android:fontFamily="@font/autour_one"
             android:inputType="textMultiLine"
             android:text="Jane@gmail.com"
             android:textAlignment="textStart"
             android:textColor="#4f4f4f"
-            android:textSize="11sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:typeface="monospace" />
     </LinearLayout>
@@ -200,7 +203,7 @@
             android:text="+1 510 486 1234"
             android:textAlignment="textStart"
             android:textColor="#4f4f4f"
-            android:textSize="11dp"
+            android:textSize="14dp"
             android:textStyle="bold"
             android:typeface="monospace" />
     </LinearLayout>
@@ -227,7 +230,7 @@
             android:text="Female"
             android:textAlignment="textStart"
             android:textColor="#4f4f4f"
-            android:textSize="11dp"
+            android:textSize="14dp"
             android:textStyle="bold"
             android:typeface="monospace" />
     </LinearLayout>
@@ -246,7 +249,7 @@
         android:text="CHANGE PASSWORD"
         android:textAlignment="viewStart"
         android:textColor="#4f4f4f"
-        android:textSize="14sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:typeface="monospace" />
 
@@ -274,7 +277,7 @@
             android:text="Enter New Password"
             android:textAlignment="viewStart"
             android:textColor="#4f4f4f"
-            android:textSize="11sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:typeface="monospace" />
     </LinearLayout>

@@ -37,14 +37,14 @@ public class HomePage2Activity  extends AppCompatActivity implements View.OnClic
         host.addTab(spec);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("Habit Reboot");
-
-        //设置导航图标要在setSupportActionBar方法之后
-        setSupportActionBar(toolbar);
-        toolbar.setNavigationIcon(R.mipmap.menuicon);
-
-        LinearLayout button = findViewById(R.id.chart);
-        button.setOnClickListener(this);
+        toolbar.setTitle("Habit Reboot2");
+//
+//        //设置导航图标要在setSupportActionBar方法之后
+//        setSupportActionBar(toolbar);
+//        toolbar.setNavigationIcon(R.mipmap.menuicon);
+//
+//        LinearLayout button = findViewById(R.id.chart);
+//        button.setOnClickListener(this);
 
     }
 

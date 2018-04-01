@@ -9,6 +9,7 @@
 
     <CalendarView
         android:id="@+id/calendarView2"
+        android:layout_marginTop="50dp"
         android:layout_width="384dp"
         android:layout_height="131dp"
         android:orientation="vertical" />
