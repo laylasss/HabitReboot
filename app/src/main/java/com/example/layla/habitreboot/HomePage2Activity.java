@@ -14,7 +14,7 @@ import android.widget.TabHost;
  * Created by mengranwo on 2/28/18.
  */
 
-public class HomePage2Activity  extends AppCompatActivity implements View.OnClickListener {
+public class HomePage2Activity  extends NavigationActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +38,7 @@ public class HomePage2Activity  extends AppCompatActivity implements View.OnClic
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("Habit Reboot2");
-//
+
 //        //设置导航图标要在setSupportActionBar方法之后
 //        setSupportActionBar(toolbar);
 //        toolbar.setNavigationIcon(R.mipmap.menuicon);

@@ -15,11 +15,14 @@
         android:layout_height="match_parent">
     </FrameLayout>
 
+<<<<<<< HEAD
     <include
         layout="@layout/activity_app_bar_navigation"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+=======
+>>>>>>> 81111ffc9ad2cd441fdec943f97eee1b52001269
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"

@@ -15,25 +15,17 @@ public class HomePage1Activity extends NavigationActivity implements OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.setContentView(R.layout.activity_home_page1);
-        super.onCreateDrawer();
-//        Toolbar toolbar = findViewById(R.id.toolbar);
-//        toolbar.setTitle("Habit Reboot1");
-//
-//        //设置导航图标要在setSupportActionBar方法之后
-//        setSupportActionBar(toolbar);
-//        toolbar.setNavigationIcon(R.mipmap.menuicon);
-//
-//        Button button = findViewById(R.id.button3);
-//        button.setOnClickListener(this);
+        setContentView(R.layout.activity_home_page1);
 
+        Button button = findViewById(R.id.button3);
+        button.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         // TODO Auto-generated method stub
         // jump into homepage2
-        Intent i = new Intent(getApplicationContext(),HomePage2Activity.class);
+        Intent i = new Intent(this, HomePage2Activity.class);
         startActivity(i);
         setContentView(R.layout.activity_home_page2);
     }
