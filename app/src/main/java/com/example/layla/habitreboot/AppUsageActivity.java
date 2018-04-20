@@ -13,7 +13,7 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 
-public class AppUsageActivity extends AppCompatActivity {
+public class AppUsageActivity extends NavigationActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

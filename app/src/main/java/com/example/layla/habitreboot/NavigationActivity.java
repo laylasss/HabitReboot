@@ -2,6 +2,7 @@ package com.example.layla.habitreboot;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -14,31 +15,42 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
-import android.widget.ViewFlipper;
 
 public abstract class NavigationActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
-    //This is the framelayout to keep your content view
+        implements MenuItem.OnMenuItemClickListener, View.OnClickListener {
+    //This is the frame layout to keep your content view
     private FrameLayout view_stub;
-    private DrawerLayout mDrawerLayout;
+    private DrawerLayout drawer_layout;
     private Toolbar toolbar;
     private NavigationView navigation_view;
+    private ActionBarDrawerToggle toggle;
+    private Menu drawer_menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_navigation);
+        super.setContentView(R.layout.activity_navigation);
 
         view_stub = findViewById(R.id.view_stub);
-        mDrawerLayout = findViewById(R.id.drawer_layout);
-        toolbar = findViewById(R.id.toolbar);
-
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, mDrawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        mDrawerLayout.addDrawerListener(toggle);
-        toggle.syncState();
         navigation_view = findViewById(R.id.nav_view);
-        navigation_view.setNavigationItemSelectedListener(this);
+        drawer_layout = findViewById(R.id.drawer_layout);
+        toolbar = findViewById(R.id.toolbar);
+        toggle = new ActionBarDrawerToggle(
+                this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer_layout.addDrawerListener(toggle);
+
+        drawer_menu = navigation_view.getMenu();
+        for(int i = 0; i < drawer_menu.size(); i++) {
+            // add item select listener
+            drawer_menu.getItem(i).setOnMenuItemClickListener(this);
+        }
+
+    }
+
+    @Override
+    protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        toggle.syncState();
     }
 
     /* Override all setContentView methods to put the content view to the FrameLayout view_stub
@@ -83,8 +95,8 @@ public abstract class NavigationActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
-            mDrawerLayout.closeDrawer(GravityCompat.START);
+        if (drawer_layout.isDrawerOpen(GravityCompat.START)) {
+            drawer_layout.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
         }
@@ -112,43 +124,41 @@ public abstract class NavigationActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
-        ViewFlipper vf = (ViewFlipper)findViewById(R.id.vf);
-
-        if (id == R.id.nav_home) {
-            // Handle the camera action
-            vf.setDisplayedChild(0);
-
-
-        } else if (id == R.id.nav_list) {
-            vf.setDisplayedChild(1);
-
-        } else if (id == R.id.nav_usage) {
-            Intent i = new Intent(getApplicationContext(),AppUsageActivity.class);
-            startActivity(i);
-            // setContentView(R.layout.a);
-            vf.setDisplayedChild(2);
-        } else if (id == R.id.nav_plan) {
-            vf.setDisplayedChild(3);
-        } else if (id == R.id.nav_alert) {
-            vf.setDisplayedChild(0);
-        } else if (id == R.id.nav_setting) {
-            vf.setDisplayedChild(4);
-        } else if (id == R.id.nav_privacy) {
-            vf.setDisplayedChild(5);
-        } else if (id == R.id.nav_logout) {
-            vf.setDisplayedChild(0);
+    public boolean onMenuItemClick(MenuItem item) {
+        Intent i;
+        switch (item.getItemId()) {
+            case R.id.nav_home:
+                // handle it
+                Log.d("myTag", "This is my nav_home");
+                return true;
+            case R.id.nav_list:
+                // do whatever
+                Log.d("myTag", "This is my nav_list");
+                i = new Intent(this, TodolistActivity.class);
+                startActivity(i);
+                finish();
+                return true;
+            case R.id.nav_usage:
+                Log.d("myTag", "This is my nav_usage");
+                i = new Intent(this, AppUsageActivity.class);
+                startActivity(i);
+                finish();
+                return true;
+            case R.id.nav_plan:
+                Log.d("myTag", "This is my nav_plan");
+                i = new Intent(this, AppUsageActivity.class);
+                startActivity(i);
+                finish();
+                return true;
+            case R.id.nav_setting:
+                Log.d("myTag", "This is my nav_setting");
+                i = new Intent(this, AppUsageActivity.class);
+                startActivity(i);
+                finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-
-
-//        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-//        drawer.closeDrawer(GravityCompat.START);
-        return true;
     }
-
-
 }
