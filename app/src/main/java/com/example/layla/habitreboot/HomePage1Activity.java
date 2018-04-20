@@ -27,7 +27,7 @@ public class HomePage1Activity extends NavigationActivity implements OnClickList
         // jump into homepage2
         Intent i = new Intent(this, HomePage2Activity.class);
         startActivity(i);
-        setContentView(R.layout.activity_home_page2);
+        finish();
     }
 }
 

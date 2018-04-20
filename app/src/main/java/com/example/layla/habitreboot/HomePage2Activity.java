@@ -2,11 +2,6 @@ package com.example.layla.habitreboot;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TabHost;
 
 
@@ -14,7 +9,7 @@ import android.widget.TabHost;
  * Created by mengranwo on 2/28/18.
  */
 
-public class HomePage2Activity  extends NavigationActivity implements View.OnClickListener {
+public class HomePage2Activity  extends NavigationActivity implements TabHost.OnTabChangeListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,25 +31,22 @@ public class HomePage2Activity  extends NavigationActivity implements View.OnCli
         spec.setIndicator("Chart");
         host.addTab(spec);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("Habit Reboot2");
-
-//        //设置导航图标要在setSupportActionBar方法之后
-//        setSupportActionBar(toolbar);
-//        toolbar.setNavigationIcon(R.mipmap.menuicon);
-//
-//        LinearLayout button = findViewById(R.id.chart);
-//        button.setOnClickListener(this);
-
+        // add tab host listener
+        host.setOnTabChangedListener(this);
     }
 
     @Override
-    public void onClick(View v) {
-        // TODO Auto-generated method stub
-        // jump into homepage3
-        Intent i = new Intent(getApplicationContext(),HomePage3Activity.class);
-        startActivity(i);
-        setContentView(R.layout.activity_home_page3);
+    public void onTabChanged(String tabId) {
+        if(tabId.equals("Chart")) {
+            Intent i = new Intent(this, HomePage3Activity.class);
+            startActivity(i);
+            finish();
+        }
+        else if(tabId.equals("Calendar")) {
+            Intent i = new Intent(this, HomePage2Activity.class);
+            startActivity(i);
+            finish();
+        }
     }
 
 }

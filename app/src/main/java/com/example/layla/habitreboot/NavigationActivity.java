@@ -131,6 +131,9 @@ public abstract class NavigationActivity extends AppCompatActivity
             case R.id.nav_home:
                 // handle it
                 Log.d("myTag", "This is my nav_home");
+                i = new Intent(this, HomePage1Activity.class);
+                startActivity(i);
+                finish();
                 return true;
             case R.id.nav_list:
                 // do whatever
@@ -147,13 +150,13 @@ public abstract class NavigationActivity extends AppCompatActivity
                 return true;
             case R.id.nav_plan:
                 Log.d("myTag", "This is my nav_plan");
-                i = new Intent(this, AppUsageActivity.class);
+                i = new Intent(this, AdvanceActivity.class);
                 startActivity(i);
                 finish();
                 return true;
             case R.id.nav_setting:
                 Log.d("myTag", "This is my nav_setting");
-                i = new Intent(this, AppUsageActivity.class);
+                i = new Intent(this, ProfileActivity.class);
                 startActivity(i);
                 finish();
                 return true;
