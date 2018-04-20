@@ -16,6 +16,7 @@ public class HomePage1Activity extends NavigationActivity implements OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         super.setContentView(R.layout.activity_home_page1);
+        super.onCreateDrawer();
 //        Toolbar toolbar = findViewById(R.id.toolbar);
 //        toolbar.setTitle("Habit Reboot1");
 //

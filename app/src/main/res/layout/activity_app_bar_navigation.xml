@@ -16,11 +16,11 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" >
         <include layout="@layout/activity_home_page1"/>
-        <include layout="@layout/todolist" />
+        <include layout="@layout/activity_todolist" />
         <include layout="@layout/activity_app_usage"/>
         <include layout="@layout/activity_advanced_health_plan"/>
         <include layout="@layout/activity_create_new_habit"/>
-        <include layout="@layout/profile"/>
+        <include layout="@layout/activity_profile"/>
     </ViewFlipper>
 
 </android.support.design.widget.CoordinatorLayout>

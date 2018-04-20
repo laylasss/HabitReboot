@@ -27,6 +27,11 @@ public abstract class NavigationActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        onCreateDrawer();
+    }
+
+    protected void onCreateDrawer() {
+
         setContentView(R.layout.activity_navigation);
 
         view_stub = findViewById(R.id.view_stub);
@@ -35,7 +40,7 @@ public abstract class NavigationActivity extends AppCompatActivity
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, mDrawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        mDrawerLayout.addDrawerListener(toggle);
+        mDrawerLayout.setDrawerListener(toggle);
         toggle.syncState();
         navigation_view = findViewById(R.id.nav_view);
         navigation_view.setNavigationItemSelectedListener(this);
