@@ -3,147 +3,153 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <TabHost
-        android:id="@+id/tabHost"
+    android:id="@+id/tabHost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <LinearLayout
+        <include
+            layout="@layout/activity_navigation"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="match_parent" />
 
-            <TabWidget
-                android:id="@android:id/tabs"
-                android:layout_width="fill_parent"
-                android:layout_height="71dp" />
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="71dp" />
 
-            <FrameLayout
-                android:id="@android:id/tabcontent"
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/Day"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/chart1"
+                    android:layout_width="match_parent"
+                    android:layout_height="255dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#9E9E9E" />
 
                 <LinearLayout
-                    android:id="@+id/Day"
+                    android:id="@+id/item1"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="104dp"
                     android:orientation="vertical">
 
-                    <com.github.mikephil.charting.charts.BarChart
-                        android:id="@+id/chart1"
-                        android:layout_width="match_parent"
-                        android:layout_height="255dp" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="#9E9E9E" />
-
                     <LinearLayout
-                        android:id="@+id/item1"
                         android:layout_width="match_parent"
-                        android:layout_height="104dp"
-                        android:orientation="vertical">
+                        android:layout_height="72dp"
+                        android:orientation="horizontal">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="72dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:layout_marginLeft="35dp"
-                                android:layout_marginTop="20dp"
-                                android:src="@mipmap/ic_facebook" />
-
-                            <TextView
-                                android:layout_width="126dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginTop="20dp"
-                                android:layout_weight="1"
-                                android:fontFamily="@font/bad_script"
-                                android:text="Facebook"
-                                android:textAppearance="@android:style/TextAppearance.Holo.Widget"
-                                android:textColor="#878787"
-                                android:textSize="24sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@mipmap/ic_facebook" />
 
                         <TextView
-                            android:layout_width="266dp"
+                            android:layout_width="126dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="35dp"
-                            android:fontFamily="sans-serif"
-                            android:text="Time spent : 20 mins"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bad_script"
+                            android:text="Facebook"
                             android:textAppearance="@android:style/TextAppearance.Holo.Widget"
                             android:textColor="#878787"
-                            android:textSize="20sp"
+                            android:textSize="24sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
+                    <TextView
+                        android:layout_width="266dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Time spent : 20 mins"
+                        android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+                        android:textColor="#878787"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/item2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
                     <LinearLayout
-                        android:id="@+id/item2"
+                        android:id="@+id/apps2"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
+                        android:layout_height="72dp"
+                        android:orientation="horizontal">
 
-                        <LinearLayout
-                            android:id="@+id/apps2"
-                            android:layout_width="match_parent"
-                            android:layout_height="72dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:layout_marginLeft="35dp"
-                                android:layout_marginTop="15dp"
-                                android:src="@mipmap/ic_instagram" />
-
-                            <TextView
-                                android:layout_width="192dp"
-                                android:layout_height="51dp"
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginTop="15dp"
-                                android:layout_weight="1"
-                                android:fontFamily=""
-                                android:text="Instagram"
-                                android:textAppearance="@android:style/TextAppearance.Holo.Widget"
-                                android:textColor="#878787"
-                                android:textSize="24sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@mipmap/ic_instagram" />
 
                         <TextView
-                            android:layout_width="266dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="35dp"
-                            android:fontFamily="sans-serif"
-                            android:text="Time spent : 10 mins"
+                            android:layout_width="192dp"
+                            android:layout_height="51dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:fontFamily=""
+                            android:text="Instagram"
                             android:textAppearance="@android:style/TextAppearance.Holo.Widget"
                             android:textColor="#878787"
-                            android:textSize="20sp"
+                            android:textSize="24sp"
                             android:textStyle="bold" />
                     </LinearLayout>
+
+                    <TextView
+                        android:layout_width="266dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Time spent : 10 mins"
+                        android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+                        android:textColor="#878787"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
+            </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/Week"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/Week"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-                </LinearLayout>
+            </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/Month"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/Month"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-                </LinearLayout>
+            </LinearLayout>
             </FrameLayout>
         </LinearLayout>
     </TabHost>
