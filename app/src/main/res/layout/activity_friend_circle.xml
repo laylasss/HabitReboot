@@ -1,152 +1,251 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-
-    <TabHost
-    android:id="@+id/tabHost"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark" />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="45dp"
         android:orientation="vertical">
-
-
-        <TabWidget
-            android:id="@android:id/tabs"
-            android:layout_width="fill_parent"
-            android:layout_height="71dp" />
-
-        <FrameLayout
-            android:id="@android:id/tabcontent"
+        <TextView
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:text="Friends Activity"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+            android:textColor="#A1A7A9"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-            <LinearLayout
-                android:id="@+id/Day"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#535353" />
+    </LinearLayout>
 
-                <com.github.mikephil.charting.charts.BarChart
-                    android:id="@+id/chart1"
-                    android:layout_width="match_parent"
-                    android:layout_height="255dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="28dp"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            app:srcCompat="@mipmap/girl"
+            android:orientation="horizontal" />
+        <TextView
+            android:layout_width="112dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Cecilla Tapia"
+            android:orientation="horizontal"/>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:background="#9E9E9E" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:text="Keep running today\n"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="72dp"
+            android:textColor="#0E1011"
+            />
 
-                <LinearLayout
-                    android:id="@+id/item1"
-                    android:layout_width="match_parent"
-                    android:layout_height="104dp"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="72dp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_marginLeft="35dp"
-                            android:layout_marginTop="20dp"
-                            android:src="@mipmap/ic_facebook" />
-
-                        <TextView
-                            android:layout_width="126dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/bad_script"
-                            android:text="Facebook"
-                            android:textAppearance="@android:style/TextAppearance.Holo.Widget"
-                            android:textColor="#878787"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="266dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="35dp"
-                        android:fontFamily="sans-serif"
-                        android:text="Time spent : 20 mins"
-                        android:textAppearance="@android:style/TextAppearance.Holo.Widget"
-                        android:textColor="#878787"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/item2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:id="@+id/apps2"
-                        android:layout_width="match_parent"
-                        android:layout_height="72dp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_marginLeft="35dp"
-                            android:layout_marginTop="15dp"
-                            android:src="@mipmap/ic_instagram" />
-
-                        <TextView
-                            android:layout_width="192dp"
-                            android:layout_height="51dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="15dp"
-                            android:layout_weight="1"
-                            android:fontFamily=""
-                            android:text="Instagram"
-                            android:textAppearance="@android:style/TextAppearance.Holo.Widget"
-                            android:textColor="#878787"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="266dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="35dp"
-                        android:fontFamily="sans-serif"
-                        android:text="Time spent : 10 mins"
-                        android:textAppearance="@android:style/TextAppearance.Holo.Widget"
-                        android:textColor="#878787"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/Week"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/Month"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-            </LinearLayout>
-            </FrameLayout>
+        <ImageView
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="72dp"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            app:srcCompat="@mipmap/health"
+            android:orientation="horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 mins ago"
+            tools:layout_editor_absoluteX="156dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteY="239dp"
+            android:layout_marginStart="72dp"
+            android:textSize="10dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="72dp"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            app:srcCompat="@mipmap/up"
+            android:orientation="horizontal" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="22dp"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            app:srcCompat="@mipmap/comment"
+            android:orientation="horizontal" />
         </LinearLayout>
-    </TabHost>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#535353" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="28dp"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            app:srcCompat="@mipmap/figure2"
+            android:orientation="horizontal" />
+        <TextView
+            android:layout_width="112dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Marry Tapia"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:text="Stop smoking\n"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="72dp"
+            android:textColor="#0E1011"
+            />
+
+        <ImageView
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="72dp"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            app:srcCompat="@mipmap/smoking"
+            android:orientation="horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 hour ago"
+            tools:layout_editor_absoluteX="156dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteY="239dp"
+            android:layout_marginStart="72dp"
+            android:textSize="10dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="72dp"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                app:srcCompat="@mipmap/up"
+                android:orientation="horizontal" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="22dp"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                app:srcCompat="@mipmap/comment"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#535353" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="28dp"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            app:srcCompat="@mipmap/figure3"
+            android:orientation="horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Samit Lamichhane"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:text="Wake up ealry\n"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="72dp"
+            android:textColor="#0E1011"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 hour ago"
+            tools:layout_editor_absoluteX="156dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteY="239dp"
+            android:layout_marginStart="72dp"
+            android:textSize="10dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="72dp"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                app:srcCompat="@mipmap/up"
+                android:orientation="horizontal" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="22dp"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                app:srcCompat="@mipmap/comment"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#535353" />
+
 </LinearLayout>
