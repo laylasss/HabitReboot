@@ -27,7 +27,7 @@ public class CreateNewActivity  extends NavigationActivity implements View.OnCli
         // TODO Auto-generated method stub
         Intent i = new Intent(getApplicationContext(), AppUsageActivity.class);
         startActivity(i);
-        setContentView(R.layout.activity_app_usage);
+        finish();
     }
 
 }
