@@ -43,7 +43,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:inputType="textMultiLine"
-            android:text="Workout&#10;TODAY:--/01" />
+            android:text="Workout&#10;Today: --/01" />
 
         <Button
             android:id="@+id/button4"
@@ -62,7 +62,7 @@
             android:layout_margin="5dip"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="READING&#10;TODAY:02/03" />
+            android:text="READING&#10;Today: 02/03" />
 
         <Button
             android:id="@+id/button6"
@@ -81,7 +81,7 @@
             android:layout_margin="5dip"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="COOKING&#10;Today:--/03" />
+            android:text="COOKING&#10;Today: --/03" />
     </LinearLayout>
 
 </LinearLayout>
