@@ -5,6 +5,23 @@
     android:layout_marginTop="50dp"
     android:orientation="vertical" >
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="119dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:text="Create Habit"
+        android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+        android:textStyle="bold"/>
+    </LinearLayout>
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="119dp"
@@ -34,7 +51,7 @@
         android:layout_width="219dp"
         android:layout_height="35dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/text_border"
         android:fontFamily="sans-serif"
         android:text=" Build or out of this habit? "
@@ -176,7 +193,7 @@
 
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/save"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -189,6 +206,7 @@
             android:text="Save" />
 
         <Button
+            android:id="@+id/cancel"
             android:layout_width="101dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -200,6 +218,4 @@
             android:textStyle="bold"
             android:text="Cancel" />
     </LinearLayout>
-
-
 </LinearLayout>

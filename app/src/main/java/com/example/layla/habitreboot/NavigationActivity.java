@@ -160,6 +160,12 @@ public abstract class NavigationActivity extends AppCompatActivity
                 startActivity(i);
                 finish();
                 return true;
+            case R.id.nav_new_habit:
+                Log.d("myTag", "This is my nav_new_habit");
+                i = new Intent(this, CreateNewActivity.class);
+                startActivity(i);
+                finish();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
