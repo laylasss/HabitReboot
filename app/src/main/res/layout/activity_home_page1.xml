@@ -42,7 +42,8 @@
             android:layout_margin="5dip"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="Workout" />
+            android:inputType="textMultiLine"
+            android:text="Workout&#10;TODAY:--/01" />
 
         <Button
             android:id="@+id/button4"
@@ -52,7 +53,7 @@
             android:layout_weight="1"
             android:background="@android:color/background_light"
             android:gravity="center"
-            android:text="Mediation" />
+            android:text="SMOKE&#10;This Week:01/05 MAX" />
 
         <Button
             android:id="@+id/button5"
@@ -61,7 +62,7 @@
             android:layout_margin="5dip"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="Reading" />
+            android:text="READING&#10;TODAY:02/03" />
 
         <Button
             android:id="@+id/button6"
@@ -71,7 +72,7 @@
             android:layout_weight="1"
             android:background="@android:color/background_light"
             android:gravity="center"
-            android:text="Limit Screen Time" />
+            android:text="DRINKING&#10;This Month:02/04 MAX" />
 
         <Button
             android:id="@+id/button7"
@@ -80,7 +81,7 @@
             android:layout_margin="5dip"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="Cooking" />
+            android:text="COOKING&#10;Today:--/03" />
     </LinearLayout>
 
 </LinearLayout>
