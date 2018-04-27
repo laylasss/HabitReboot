@@ -142,7 +142,7 @@
             android:layout_marginTop="20dp"
             android:layout_weight="1"
             android:fontFamily="sans-serif"
-            android:text="Or more times per period"
+            android:text="Or less times per period"
             android:textAppearance="@android:style/TextAppearance.Holo.Widget"
             android:textStyle="bold" />
     </LinearLayout>
