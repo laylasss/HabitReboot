@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ImageButton01"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Write my own!"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:drawableLeft="@mipmap/write"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="12dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/autour_one"
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="24sp"
+        android:text="Or choose from below"
+        android:textAlignment="viewStart"
+        android:textColor="#4f4f4f"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ImageButton02"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="0dp"
+            android:text="Health"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:drawableLeft="@mipmap/health"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ImageButton03"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textColor="#000000"
+            android:text="Fitness"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:drawableLeft="@mipmap/workout"/>/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ImageButton04"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textColor="#000000"
+            android:text="Hobbies"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:drawableLeft="@mipmap/star"/>/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ImageButton06"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Social"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:drawableLeft="@mipmap/friend"/>
+        />
+
+
+        <Button
+            android:id="@+id/imageButton07"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Efficient"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:drawableLeft="@mipmap/clock"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

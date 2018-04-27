@@ -18,14 +18,14 @@ public class CreateNewActivity  extends NavigationActivity implements View.OnCli
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_new_habit);
 
-        Button button = findViewById(R.id.button2);
+        Button button = findViewById(R.id.save);
         button.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         // TODO Auto-generated method stub
-        Intent i = new Intent(getApplicationContext(), AppUsageActivity.class);
+        Intent i = new Intent(getApplicationContext(), HomePage1Activity.class);
         startActivity(i);
         finish();
     }

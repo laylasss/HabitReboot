@@ -86,10 +86,10 @@
                             android:layout_marginTop="10dp"
                             android:layout_weight="2"
                             android:fontFamily="sans-serif"
-                            android:text="Current strike: 5"
+                            android:text="GOALS MEET: 10            CURRENT STRIKE: 5             LONGEST STRIKE: 5"
                             android:textAppearance="@android:style/TextAppearance.Holo.Widget"
-                            android:textColor="@android:color/holo_red_dark"
-                            android:textSize="14sp"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="10sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
