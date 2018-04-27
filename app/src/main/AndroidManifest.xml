@@ -28,6 +28,7 @@
         <activity android:name=".ProfileActivity"></activity>
         <activity android:name=".TodolistActivity"></activity>
         <activity android:name=".CreateNewActivity"></activity>
+        <activity android:name=".Advance2Activity"></activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

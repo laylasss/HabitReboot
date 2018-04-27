@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/text_border"
+            android:textSize="15sp"
+            android:text=" Search "
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+            android:textStyle="bold"
+            android:drawableLeft="@mipmap/write"
+            android:gravity="center_horizontal|top"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="12dp"
+        android:background="@null"
+        android:fontFamily="@font/autour_one"
+        android:text="CATRGORIES"
+        android:textColor="@color/DarkGray"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="monospace"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ImageButton01"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@mipmap/jogger"
+            android:textColor="@color/Black"
+            android:text="Cardio Plans"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ImageButton02"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@mipmap/yoga"
+            android:textColor="@color/Black"
+            android:text="Yoga Plans"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="12dp"
+        android:background="@null"
+        android:fontFamily="@font/autour_one"
+        android:text="TOP GOALS"
+        android:textColor="@color/DarkGray"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="monospace"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:textSize="25sp"
+        android:text=" Exercise "
+        android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+        android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:fontFamily="sans-serif"
+            android:text="222k joined\u2022 1k viewed\u2022 30coaches"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+            android:textColor="@color/RoyalBlue"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:textSize="25sp"
+            android:text=" Go to gym "
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:fontFamily="sans-serif"
+            android:text="39.1k joined\u2022 1.4k viewed\u2022 4coaches"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+            android:textColor="@color/RoyalBlue"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:textSize="25sp"
+            android:text=" Run "
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:fontFamily="sans-serif"
+            android:text="84.5k joined\u2022 1.7k viewed\u2022 11coaches"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget"
+            android:textColor="@color/RoyalBlue"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"/>
+
+    </LinearLayout>
+</LinearLayout>

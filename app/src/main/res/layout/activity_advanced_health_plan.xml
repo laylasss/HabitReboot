@@ -18,7 +18,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btnGreen"
+            android:id="@+id/ImageButton01"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:background="@mipmap/workout500"
