@@ -2,11 +2,6 @@ package com.example.layla.habitreboot;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TabHost;
 
 import com.github.mikephil.charting.charts.BarChart;
@@ -23,7 +18,7 @@ import java.util.ArrayList;
  * Created by mengranwo on 2/28/18.
  */
 
-public class HomePage3Activity  extends AppCompatActivity implements View.OnClickListener {
+public class HomePage3Activity  extends NavigationActivity implements TabHost.OnTabChangeListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,26 +29,18 @@ public class HomePage3Activity  extends AppCompatActivity implements View.OnClic
         host.setup();
 
         //Tab 1
-        TabHost.TabSpec spec = host.newTabSpec("Calendar");
-        spec.setContent(R.id.calendar);
-        spec.setIndicator("Calendar");
-        host.addTab(spec);
-
-        //Tab 2
-        spec = host.newTabSpec("Chart");
+        TabHost.TabSpec spec = host.newTabSpec("Chart");
         spec.setContent(R.id.chart);
         spec.setIndicator("Chart");
         host.addTab(spec);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("Habit Reboot3");
-
-        //设置导航图标要在setSupportActionBar方法之后
-//        setSupportActionBar(toolbar);
-//        toolbar.setNavigationIcon(R.mipmap.menuicon);
+        //Tab 2
+        spec = host.newTabSpec("Calendar");
+        spec.setContent(R.id.calendar);
+        spec.setIndicator("Calendar");
+        host.addTab(spec);
 
         // render charts
-        setContentView(R.layout.activity_home_page3);
         BarChart bchart = findViewById(R.id.chart1);
         ArrayList<BarEntry> yVals1 = new ArrayList<>();
 
@@ -76,15 +63,23 @@ public class HomePage3Activity  extends AppCompatActivity implements View.OnClic
         bchart.setData(data);
         bchart.setFitBars(true); // make the x-axis fit exactly all bars
         bchart.invalidate(); // refresh
+
+        // add tab host listener
+        host.setOnTabChangedListener(this);
     }
 
     @Override
-    public void onClick(View v) {
-        // TODO Auto-generated method stub
-        // jump into homepage3
-        Intent i = new Intent(getApplicationContext(),HomePage3Activity.class);
-        startActivity(i);
-        setContentView(R.layout.activity_home_page3);
+    public void onTabChanged(String tabId) {
+        if(tabId.equals("Chart")) {
+            Intent i = new Intent(this, HomePage3Activity.class);
+            startActivity(i);
+            finish();
+        }
+        else if(tabId.equals("Calendar")) {
+            Intent i = new Intent(this, HomePage2Activity.class);
+            startActivity(i);
+            finish();
+        }
     }
 
 }
