@@ -38,6 +38,8 @@ public abstract class NavigationActivity extends AppCompatActivity
         toggle = new ActionBarDrawerToggle(
                 this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer_layout.addDrawerListener(toggle);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Habit Reboot");
 
         drawer_menu = navigation_view.getMenu();
         for(int i = 0; i < drawer_menu.size(); i++) {
@@ -163,6 +165,12 @@ public abstract class NavigationActivity extends AppCompatActivity
             case R.id.nav_new_habit:
                 Log.d("myTag", "This is my nav_new_habit");
                 i = new Intent(this, CreateNewActivity.class);
+                startActivity(i);
+                finish();
+                return true;
+            case R.id.nav_friend_circle:
+                Log.d("myTag", "This is my nav_friend_circle");
+                i = new Intent(this, ShareActivity.class);
                 startActivity(i);
                 finish();
                 return true;

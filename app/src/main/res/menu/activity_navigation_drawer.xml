@@ -6,12 +6,16 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="?android:attr/listChoiceIndicatorMultiple"
+            android:icon="@mipmap/home"
             android:title="Home" />
         <item
             android:id="@+id/nav_new_habit"
             android:icon="@mipmap/plus"
             android:title="Create Habit" />
+        <item
+            android:id="@+id/nav_friend_circle"
+            android:icon="@mipmap/friend_circle"
+            android:title="Friend Circle" />
         <item
             android:id="@+id/nav_list"
             android:icon="?android:attr/actionModeFindDrawable"

@@ -17,7 +17,6 @@ public class CreateGameActivityDaily extends NavigationActivity implements View.
         setContentView(R.layout.activity_create_new_habit_daily);
 
         Button button = findViewById(R.id.radioButton4);
-
         button.setOnClickListener(this);
     }
 

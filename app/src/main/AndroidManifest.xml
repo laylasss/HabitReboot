@@ -34,6 +34,7 @@
         <activity android:name=".CreateGameActivityQuit"></activity>
         <activity android:name=".CreateGameActivityWeekly"></activity>
         <activity android:name=".CreateWaterActivity"></activity>
+        <activity android:name=".ShareActivity"></activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
