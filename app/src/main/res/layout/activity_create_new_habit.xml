@@ -66,6 +66,7 @@
         android:layout_marginTop="5dp"
         android:fontFamily="sans-serif"
         android:text="Build"
+        android:checked="true"
         android:textAlignment="textStart"
         android:textSize="14sp"
         android:textStyle="bold" />
@@ -113,6 +114,7 @@
         android:layout_marginLeft="30dp"
         android:fontFamily="sans-serif"
         android:text="Weekly"
+        android:checked="true"
         android:textAlignment="textStart"
         android:textSize="14sp"
         android:textStyle="bold"/>
