@@ -6,22 +6,21 @@ import android.view.View;
 import android.widget.Button;
 
 /**
- * Created by mengranwo on 2/28/18.
+ * Created by layla on 4/28/18.
  */
 
-public class CreateNewActivity extends NavigationActivity implements View.OnClickListener {
-
+public class CreateActivityNavigation1 extends NavigationActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.create_activity_navigation_1);
+        setContentView(R.layout.create_activity_navigation_2);
 
-        //Health
-        Button button = findViewById(R.id.ImageButton02);
+        //Drink water
+        Button button = findViewById(R.id.ImageButton04);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
-                Intent i = new Intent(getApplicationContext(), CreateActivityNavigation1.class);
+                Intent i = new Intent(getApplicationContext(), CreateWaterActivity.class);
                 startActivity(i);
                 finish();
             }
@@ -38,7 +37,6 @@ public class CreateNewActivity extends NavigationActivity implements View.OnClic
             }
         });
     }
-
 
 
 }

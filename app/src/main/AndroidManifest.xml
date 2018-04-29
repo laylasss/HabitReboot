@@ -29,6 +29,11 @@
         <activity android:name=".TodolistActivity"></activity>
         <activity android:name=".CreateNewActivity"></activity>
         <activity android:name=".Advance2Activity"></activity>
+        <activity android:name=".CreateActivityNavigation1"></activity>
+        <activity android:name=".CreateGameActivityDaily"></activity>
+        <activity android:name=".CreateGameActivityQuit"></activity>
+        <activity android:name=".CreateGameActivityWeekly"></activity>
+        <activity android:name=".CreateWaterActivity"></activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
