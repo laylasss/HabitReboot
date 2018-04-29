@@ -44,13 +44,13 @@ public class HomePage3Activity  extends NavigationActivity implements TabHost.On
         BarChart bchart = findViewById(R.id.chart1);
         ArrayList<BarEntry> yVals1 = new ArrayList<>();
 
-        for (int i = 0; i < 10 + 1; i++) {
-            float val = (float) (Math.random());
+        for (int i = 0; i < 7; i++) {
+            int val = (int) (Math.random() * 5 + 1);
             yVals1.add(new BarEntry(i, val));
         }
 
         BarDataSet set1;
-        set1 = new BarDataSet(yVals1, "The year 2018");
+        set1 = new BarDataSet(yVals1, "This week 04/20-04/27");
         set1.setColors(ColorTemplate.MATERIAL_COLORS);
         ArrayList<IBarDataSet> dataSets = new ArrayList<>();
         dataSets.add(set1);

@@ -35,11 +35,12 @@ public abstract class NavigationActivity extends AppCompatActivity
         navigation_view = findViewById(R.id.nav_view);
         drawer_layout = findViewById(R.id.drawer_layout);
         toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Habit Reboot");
+
         toggle = new ActionBarDrawerToggle(
                 this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer_layout.addDrawerListener(toggle);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Habit Reboot");
 
         drawer_menu = navigation_view.getMenu();
         for(int i = 0; i < drawer_menu.size(); i++) {

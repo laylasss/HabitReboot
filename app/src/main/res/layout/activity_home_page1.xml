@@ -41,7 +41,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:inputType="textMultiLine"
-            android:text="Workout&#10;Today: --/01" />
+            android:text="DRINK MORE WATER&#10;Today: --/01" />
 
         <Button
             android:id="@+id/button4"
